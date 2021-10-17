@@ -1,4 +1,4 @@
-import Pokemons from './containers/Pokemon/Pokemons'
+import Pokemons from './containers/Pokemon'
 
 function App() {
   return (
