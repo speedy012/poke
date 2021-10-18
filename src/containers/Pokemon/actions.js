@@ -1,3 +1,20 @@
 import { createAction } from '@reduxjs/toolkit'
 
-export const fetchPokemons = createAction('FETCH_POKEMONS_REQUEST')
+const fetchPokemons = createAction('FETCH_POKEMONS_REQUEST')
+
+const fetchPokemonsSuccess = createAction(
+  'FETCH_POKEMON_SUCCESS',
+  pokemons => {
+    return {
+      payload: {
+        pokemons,
+      },
+    };
+  }
+);
+
+
+export const actions = {
+  fetchPokemons,
+  fetchPokemonsSuccess
+}
